@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Server",
+        "runtimeExecutable": "node",
+        "program": "${workspaceFolder}/dist/index.js",
+        "outFiles": [
+          "${workspaceFolder}/**/*.js"
+        ],
+        "env": {
+            "DEBUG": "loopback:connector:*"
+          },
+        "restart": true,
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "envFile": "${workspaceFolder}/.env",
+      }
+    ]
+  }

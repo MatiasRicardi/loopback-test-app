@@ -1,1 +1,2 @@
-export * from './product-model.model';
+export * from './titemnuevo.model';
+export * from './titem-maso.model';

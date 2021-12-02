@@ -3,12 +3,13 @@ import {juggler} from '@loopback/repository';
 
 const config = {
   name: 'db',
-  connector: 'mysql',
-  host: 'sql10.freesqldatabase.com',
-  port: 3306,
-  user: 'sql10449753',
-  password: 'ieScBdbH7g',
-  database: 'sql10449753'
+  connector: 'mssql',
+  url: process.env.DB_URL,
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_DATABASE,
 };
 
 // Observe application's life cycle to disconnect the datasource when

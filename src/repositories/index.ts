@@ -1,1 +1,2 @@
-export * from './product-model.repository';
+export * from './titemnuevo.repository';
+export * from './titem-maso.repository';
